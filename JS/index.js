@@ -18,13 +18,7 @@ function billingFunction(){
       billN.removeAttribute("required");
       billZ.removeAttribute("required");
     }
-    
-    console.log(testTheBox.value)
-    console.log(shipN.value)
-    console.log(shipZ.value)
-    console.log(billN.value)
-    console.log(billZ.value)
-    
+  
     
   }
       
