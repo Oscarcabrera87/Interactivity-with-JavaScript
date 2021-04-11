@@ -6,14 +6,43 @@
   }
   body {
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 10px;
+  }
+  .container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: space-around;
+  }
+  .containerChild{
+    justify-content: center;
+    min-height: 50vh;
+    background-color: #ece2e1;
+  }
+  h2 {
+    background-color: #d3e0dc;
+    width: 100%;
+  }
+  .board{
+    padding: 50px;
+    margin: 0 auto;
+    background-color: #fcd1d1;
+    min-height: 40vh;
+  }
+  #imgContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .img{
+    object-fit: cover;
+    width: 100%;
   }
   nav {
-    background: #222;
+    background: #aee1e1;
     padding: 0 15px;
   }
   a {
-    color: white;
+    color: black;
     text-decoration: none;
   }
   .menu,
@@ -21,7 +50,7 @@
     list-style-type: none;
   }
   .logo {
-    font-size: 20px;
+    font-size: 15px;
     padding: 7.5px 10px 7.5px 0;
   }
   .item {
@@ -32,7 +61,8 @@
   }
   .item:not(.button) a:hover,
   .item a:hover::after {
-    color: #ccc;
+    color: #aee1e1;
+    background-color: black;
   }
   /* Mobile menu */
   .menu {
@@ -50,7 +80,7 @@
   }
   .toggle {
     order: 1;
-    font-size: 20px;
+    font-size: 15px;
   }
   .item.button {
     order: 2;
@@ -79,7 +109,7 @@
     font-size: 12px;
   }
   .has-submenu > a::after {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif;
     font-size: 12px;
     line-height: 16px;
     font-weight: 900;
