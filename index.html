@@ -11,19 +11,34 @@
 	<link rel="stylesheet" type="text/css" href="CSS/index.css">
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-	<script src="index.js"></script>
+
 </head>
-<nav>
-	<ul class="menu">
-		<li class="logo"><a href="#">Oscar Arron Lee Cabrera</a></li>
-		<li class="item"><a href="#buttons">Buttons</a></li>
+<!-- Beginning of first large flexbox -->
+<body class="container">
+	<header>
+		<div>
+			<img id="imgHeader" src="img/Website_cover.jpg"
+				alt="Typewrighter for active artists">
+		</div>
+		<div class="containerChild" id="specialQuote">
+			<p>“When the mob and the press and the whole world tell you to move, your job is to plant yourself like a tree by the river of truth, and tell the whole world 'No, You Move.”<br>
+				― J. Michael Straczynski</p>
+		</div>
+	</header>
+<nav id="navbar">
+	<ul class="menu" >
+		<li class="logo"><img src="img/Logo.jpg" width="100px">
+		</li>
+		<li class="item"><a href="#about">About</a></li>
 		<li class="item"><a href="#functions">Functions</a></li>
-		<li class="item"><a href="#animations">CSS3 Animations</a></li>
+		<li class="item"><a href="#animations">CSS3 Animations</a>
+		</li>
 		<li class="item"><a href="#flexbox">CSS3 Flexbox</a></li>
 		<li class="item has-submenu">
 			<a tabindex="0">Sites</a>
 			<ul class="submenu">
-				<li class="subitem"><a href="www.latinixplaywrights.com">LPC</a>
+				<li class="subitem"><a
+						href="www.latinxplaywrights.com">LPC</a>
 				</li>
 				<li class="subitem"><a
 						href="https://www.broadwayworld.com/off-broadway/article/Playwrights-for-2018-19-Emerging-Writers-Group-Announced-at-the-Public-20180215">EWG</a>
@@ -45,52 +60,69 @@
 			</ul>
 		</li>
 
-		<li class="item button"><a href="#log">Log In</a></li>
-		<li class="item button secondary"><a href="#sign">Sign Up</a></li>
-		<li class="toggle"><a href="#log"><i class="fas fa-bars"></i></a></li>
+
+		<li class="toggle"><a href="#log"><i
+					class="fas fa-bars"></i></a></li>
 	</ul>
 </nav>
-
-<body class="container">
-	<!-- <header class="containerChild" id="imgContainer">
-		<h2>Splash</h2>
-		<div class="img">
-		<img src="https://img.tineye.com/flickr-images/?filepath=labs-flickr-public/images/cc/5861091092_cc96b6d2e6_m.jpg&size=84&size=1000"></div>
-		<div class="img">
-		<img src="https://img.tineye.com/flickr-images/?filepath=labs-flickr-public/images/4e/5188010471_4e80b6a5ef_m.jpg&size=85&size=1000"></div>
-		<div class="img">
-		<img src="https://img.tineye.com/flickr-images/?filepath=labs-flickr-public/images/66/5163486461_6698e1e35e_m.jpg&size=99&size=1000"></div>
-		<div class="img">
-		<img src="https://img.tineye.com/flickr-images/?filepath=labs-flickr-public/images/68/6311398161_6822f69b46_m.jpg&size=106&size=1000"></div>
-		<div class="img">
-		<img src="https://img.tineye.com/flickr-images/?filepath=labs-flickr-public/images/cb/4886407683_cb43a7cdd8_m.jpg&size=90&size=1000"></div>
-		<div class="img">
-		<img src="https://img.tineye.com/flickr-images/?filepath=labs-flickr-public/images/81/3588997013_81a2147d95_m.jpg&size=94&size=1000"></div>
-		<div class="img">
-		<img src="https://img.tineye.com/flickr-images/?filepath=labs-flickr-public/images/7b/4541048945_7ba237b1ea_m.jpg&size=88&size=1000"></div>
-		<div class="img">
-		<img src="https://img.tineye.com/flickr-images/?filepath=labs-flickr-public/images/e8/6153481543_e81fe15dc2_m.jpg&size=103&size=1000"></div> -->
-
-
-	</header>
-	<section class="containerChild" id="buttons">
-		<h2>Buttons</h2>
-		<div class="board">
+<div class="containerChild about">
+	<div class="aboutText">
+	<h2>About Me</h2>
+	<p> I have had a pretty interesting couple of years recently.</p>
+</div>
+	<div class="aboutCentered">
+		<section class="cards">
+			<article class="card">
+				<h3>The Public Theater</h3>
+				<img src="img/The_Public.jpeg" width="100%">
+				<p>From 2017 to 2020, I was an emerging playwright for The Public Theater. I focused on crafting a new play commissioned by the institution. The play is called "Maybe You Should Just" with its off broadway industry reading last year before everything shut down. The two year residence was invaluable in understanding the ins and outs of NYC theater and gave me a once in a lifetime chance to gain a platform I would never have attained on my own.</p>
+			</article>
+			<article class="card">
+				<h3>The Flea Theater</h3>
+				<img src="img/The_Flea.jpeg" width="100%">
+				
+				<p>In the beginning of the pandemic, Theater shut down and committed to artists that were part of its community. Unfortunately, The Flea had a significant issue with the way they treated their artists. I became an organizer and artist activist to address the anti-black issues by helping to co-chair the Economic Justice Committee and the Planning Committee. We got national news ranging from New York Times to LA Times. The Theater shut down and the wripples sent waves across the city and the national conversation of what responsibilities theaters have to their artists. </p>
+			</article>
+			<article class="card">
+				<h3>Latinx Playwrights Circle</h3>
+				<img src="img/The_LPC.jpeg" width="100%">
+				
+				<p>I am the Co-artistic Director for this non-profit. We are focusing on improving the pathetic 3% of Latinx plays produced in NYC over the past couple of years. Its so low that anything will improve where we are currently at right now.</p>
+			</article>
+			<article class="card">
+				<h3>Technical Support Specialist</h3>
+				<img src="img/The_Columbia.jpeg" width="100%">
+				
+				<p>Since the begining of the pandemic, I have been able to help organizations, theaters and non-profits alike, that needed help jumping into digital performance and presentations. The theaters in New York that I have been able to assist range from off-broadway theaters like Primary Stages all the way to institutions of higher learning like Columbia University.</p>
+			</article>
+			<article class="card">
+				<h3>Web Design</h3>
+				<img src="img/The_Learning.jpg" width="100%">
+				
+				<p>When I stepped into the role of Co-artistic Director, as a leader of our volunteer staff, I wouldn't ask anyone anything that I wouldn't do myself. I have been pushing to learn more as we develop our non-profits site. And as we develop with more opportunities for grants, I am pushing to learn more about the process of Full-stack developer so that I can continue to not only lead my organiztion but partner with institutions of higher learning in creating a database to create resources for young Latinx students.</p>
+			</article>
+			<article class="card">
+				<h3>Advicate for Autism</h3>
+				<img src="img/The_Olympics.jpeg" width="100%">
+				
+				<p>My brother who is 11 months younger than me has been the source of my learning of empathy. Over our lives, I have participated in Special Olympics, been a class helper for him, won grants for his adaptive & speech tools, and been (at least I think) a pretty good brother. The greatest benefit of growing up with Andrew was my very refined skills in the area of patience and in leadership through empathy.</p>
+			</article>
+		</section>
+	</div>
+</div>
+<div class="containerChild">
+	<h2>Functions</h2>
+	<section class="functions">
+		
+		<div class="fuctionsChild">
 			<p>hi</p>
-
 		</div>
 	</section>
-	<section class="containerChild" id="functions">
-		<h2>Functions</h2>
-		<div class="board">
-			<p>hi</p>
-
-		</div>
-	</section>
+</div>
 	<section class="containerChild" id="animations">
 		<h2>CSS3 Animations</h2>
 		<div class="board">
-		<p>hi</p>
+			<p>hi</p>
 
 		</div>
 	</section>
@@ -101,5 +133,5 @@
 
 		</div>
 	</section>
-
+	<script src="JS/index.js"></script>
 </body>

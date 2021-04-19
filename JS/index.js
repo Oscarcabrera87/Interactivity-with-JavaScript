@@ -43,4 +43,18 @@ for (let item of items) {
 }
 document.addEventListener("click", closeSubmenu, false);
 
-alert("You have successfully added your javascript!!!");
+// Sticky Navbar
+window.onscroll = function () {
+  myFunction()}
+
+var navbar = document.querySelector('#navbar');
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}

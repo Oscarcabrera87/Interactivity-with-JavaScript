@@ -7,62 +7,80 @@
   body {
     font-family: sans-serif;
     font-size: 10px;
+    padding: 0;
+    margin: 0;
+
   }
   .container{
+    position: relative;
     display: flex;
     flex-flow: column nowrap;
     align-content: space-around;
   }
-  .containerChild{
+  .containerChild:not(#specialQuote){
     justify-content: center;
     min-height: 50vh;
-    background-color: #ece2e1;
+    background-color: white;
   }
   h2 {
-    background-color: #d3e0dc;
+    font-size: 20px;
     width: 100%;
-  }
-  .board{
-    padding: 50px;
-    margin: 0 auto;
-    background-color: #fcd1d1;
-    min-height: 40vh;
-  }
-  #imgContainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .img{
-    object-fit: cover;
-    width: 100%;
+    height: 5vh;
+    padding: 2em;
+    text-align: center;
+    text-decoration: underline;
+  
   }
   nav {
-    background: #aee1e1;
-    padding: 0 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+    padding: 0;
+    height: auto;
+  }
+  #imgHeader{
+    width: 100%;
+    margin: 0 auto;
   }
   a {
     color: black;
     text-decoration: none;
   }
+  
   .menu,
   .submenu {
     list-style-type: none;
   }
   .logo {
-    font-size: 15px;
-    padding: 7.5px 10px 7.5px 0;
+    background-color: white;
+    border-radius: 10px;
   }
   .item {
     padding: 10px;
-  }
-  .item.button {
-    padding: 9px 5px;
+    background-color: white;
+    border-radius: 10px;
   }
   .item:not(.button) a:hover,
   .item a:hover::after {
-    color: #aee1e1;
-    background-color: black;
+    color: white;
+    background-color: #4F655C;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 0;
+    height: 100%;
+  }
+  #specialQuote{
+    height: 30vh;
+    border-top: solid;
+    border-top-style: double;
+    
+  }
+  #specialQuote p{
+    font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+    margin: auto;
+    padding: 15vh 10px;
   }
   /* Mobile menu */
   .menu {
@@ -77,26 +95,20 @@
   }
   .menu li.subitem a {
     padding: 15px;
+    color: black;
   }
   .toggle {
     order: 1;
     font-size: 15px;
   }
-  .item.button {
-    order: 2;
-  }
   .item {
-    order: 3;
+    order: 2;
     width: 100%;
     text-align: center;
     display: none;
   }
   .active .item {
     display: block;
-  }
-  .button.secondary {
-    /* divider between buttons and menu links */
-    border-bottom: 1px #444 solid;
   }
   /* Submenu up from mobile screens */
   .submenu {
@@ -114,17 +126,35 @@
     line-height: 16px;
     font-weight: 900;
     content: "\f078";
-    color: white;
+    color: orange;
     padding-left: 5px;
+    border-radius: 5em;
   }
   .subitem a {
     padding: 10px 15px;
+    background-color: white;
   }
   .submenu-active {
-    background-color: #111;
+    background-color: #4F655C;
+    color: white;
     border-radius: 3px;
   }
-  
+  /* Mobile tiles */
+ .cards{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: White;
+}
+.card{
+ flex: 0 1 calc(80% - 1em);
+ box-sizing: border-box;
+ margin: 1rem .25em;
+ padding: 2% 1% 4% 1%;
+ background-color: lightgray;
+ border-radius: 5%;
+}
+/* end code for about tiles */
   /* Tablet menu */
   @media all and (min-width: 700px) {
     .menu {
@@ -133,46 +163,55 @@
     .logo {
       flex: 1;
     }
-    .item.button {
-      width: auto;
-      order: 1;
-      display: block;
-    }
     .toggle {
       flex: 1;
       text-align: right;
-      order: 2;
     }
-    /* Button up from tablet screen */
-    .menu li.button a {
-      padding: 10px 15px;
-      margin: 5px 0;
+    .cards{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      background-color:white;
     }
-    .button a {
-      background: #0080ff;
-      border: 1px royalblue solid;
+    .card{
+     flex: 0 1 calc(45% - 1em);
+     box-sizing: border-box;
+     margin: 1rem .25em;
+     padding: 2% 1% 4% 1%;
+     background-color: lightgray;
     }
-    .button.secondary {
-      border: 0;
+    .card p{
+      font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      content: "\f078";
     }
-    .button.secondary a {
-      background: transparent;
-      border: 1px #0080ff solid;
-    }
-    .button a:hover {
-      text-decoration: none;
-    }
-    .button:not(.secondary) a:hover {
-      background: royalblue;
-      border-color: darkblue;
-    }
+     /* Sticky nav bar with css and javascript. very frustating. */
+  .sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .content {
+    padding: 60px;
+  }
+  .sticky + .content {
+    padding-top: 60px
+  }
+  .sticky + .content + .menu + .submenu-active{
+    padding-top: 60px;
+    background-color:grey;
+  }
   }
   /* Desktop menu */
   @media all and (min-width: 960px) {
     .menu {
       align-items: flex-start;
       flex-wrap: nowrap;
-      background: none;
+      background-color: white;
+    }
+    .submenu{
+      background-color: white;
+      flex-direction: row;
     }
     .logo {
       order: 0;
@@ -183,20 +222,68 @@
       display: block;
       width: auto;
     }
-    .button {
-      order: 2;
+    nav .menu .submenu-active{
+      background: none;
     }
     .submenu-active .submenu {
-      display: block;
-      position: absolute;
+      display: inline-flex;
       left: 0;
       top: 68px;
-      background: #111;
+      background: #4F655C;
+      color: black;
+      background-color: white;
+      width: 100%;
     }
     .toggle {
       display: none;
+
     }
     .submenu-active {
       border-radius: 0;
+      background-color: #4F655C;
+      color: white;
+      height: 20%;
     }
+    .cards{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      background-color: gray;
+      width: 70%;
+      margin: 0 auto;
+      border: solid;
+    }
+    .card{
+     flex: 0 1 calc(30% - 1em);
+     box-sizing: border-box;
+     margin: 1rem .25em;
+     background-color: white;
+     padding: 2% 1% 4% 1%;
+    }
+    .card p{
+    font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    content: "\f078";
+    }
+    .aboutText{
+      padding: 20px;
+      margin: 0 auto;
+    }
+     /* Sticky nav bar with css and javascript. very frustating. */
+  .sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .content {
+    padding: 60px;
+  }
+  .sticky + .content{
+    padding-top: 60px;
+  }
+  .sticky + .content + .menu + .submenu-active{
+    padding-top: 60px;
+    background-color:grey;
+  }
   }
