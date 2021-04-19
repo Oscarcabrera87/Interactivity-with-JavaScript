@@ -37,6 +37,7 @@
     overflow: hidden;
     padding: 0;
     height: auto;
+    border-bottom: double;
   }
   #imgHeader{
     width: 100%;
@@ -73,6 +74,7 @@
     height: 30vh;
     border-top: solid;
     border-top-style: double;
+    border-bottom-style: double;
     
   }
   #specialQuote p{
