@@ -4,11 +4,13 @@
     padding: 0;
     margin: 0;
   }
-  body {
+  body:not(#specialQuote .containerChild) {
     font-family: sans-serif;
     font-size: 10px;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
+    background-color: lightgray;
 
   }
   .container{
@@ -17,10 +19,70 @@
     flex-flow: column nowrap;
     align-content: space-around;
   }
-  .containerChild:not(#specialQuote){
+  .containerChild2{
     justify-content: center;
     min-height: 50vh;
     background-color: white;
+    margin-bottom: 40px;
+  }
+  .containerChild3 {
+    justify-content: center;
+    min-height: 50vh;
+    background-color: white;
+    margin-bottom: 40px;
+  }
+  .containerChild4{
+    height: 30vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+  
+    font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif;
+  }
+  .funcBox{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .funcChild {
+    border-bottom: lightgray solid;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 1rem .25em;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  #Art1{
+    flex: 0 0 calc(25% - 1em);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+  #Art2{
+    flex: 0 2 calc(60% - 1em);
+    box-sizing: border-box;
+    margin: 1rem .25em;
+    padding: 30px;
+    border-left:lightgray solid;
+    border-right: lightgrey solid;
+    align-self: center;
+
+  }
+  #Art3{
+    display: none;
+  }
+  #Art4{
+
+  }
+  #Art5{
+    
+  }
+  #Art6{
+    flex: 0 0 calc(50% - 1em);
+    box-sizing: border-box;
+    margin: 1rem .25em;
   }
   h2 {
     font-size: 20px;
@@ -38,6 +100,7 @@
     padding: 0;
     height: auto;
     border-bottom: double;
+    
   }
   #imgHeader{
     width: 100%;
@@ -47,7 +110,6 @@
     color: black;
     text-decoration: none;
   }
-  
   .menu,
   .submenu {
     list-style-type: none;
@@ -74,7 +136,7 @@
     height: 30vh;
     border-top: solid;
     border-top-style: double;
-    border-bottom-style: double;
+    background-color: white;
     
   }
   #specialQuote p{
@@ -90,6 +152,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
   }
   .menu li a {
     display: block;
@@ -157,10 +220,15 @@
  border-radius: 5%;
 }
 /* end code for about tiles */
+/* ------------------------
+------------------------
+------------------------ */
   /* Tablet menu */
   @media all and (min-width: 700px) {
     .menu {
+      align-items: flex-start;
       justify-content: center;
+      background-color: white;
     }
     .logo {
       flex: 1;
@@ -187,21 +255,92 @@
       font-size: 12px;
       content: "\f078";
     }
+    .funcBox{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+    .funcChild{
+      min-height: 15vh;
+    }
+    .funcChild:not(#Art1, #Art2, #Art3){
+      border-bottom: lightgray solid;
+      box-sizing: border-box;
+      padding: 30px;
+      margin: 1rem .25em;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #Art1{
+      flex: 0 0 calc(25% - 1em);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+    #Art2{
+      flex: 0 2 calc(60% - 1em);
+      box-sizing: border-box;
+      margin: 1rem .25em;
+      padding: 30px;
+      border-left:lightgray solid;
+      border-right: lightgrey solid;
+      align-self: center;
+
+    }
+    #Art3{
+      display: none;
+    }
      /* Sticky nav bar with css and javascript. very frustating. */
   .sticky{
     position: fixed;
     top: 0;
     width: 100%;
   }
+  .service-sticky-mode{
+    margin-top: 60px;
+  }
   .content {
-    padding: 60px;
+    padding-top: 180px;
+    z-index: 1;
+  }
+  .aboutText{
+    padding-top: 60px;
   }
   .sticky + .content {
-    padding-top: 60px
+    z-index: 2;
   }
   .sticky + .content + .menu + .submenu-active{
-    padding-top: 60px;
-    background-color:grey;
+    z-index: 5;
+  }
+  /* Footer comments */
+  .footBox{
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 50vh;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 1rem .25em;
+    background-color: darkslategray;
+    margin-top: 0;
+    font-size: small;
+
+  }
+  .footChild{
+    display:flex;
+    flex: 0 1 calc(23% - 1em);
+    flex-direction: column;
+    padding: 20px;
+  }
+  .footChild a{
+    flex:0 1 auto;
+    padding: 5px;
+    justify-items: center;
+    color: darkturquoise;
+  }
+  .footChild h3{
+    color: white;
+  }
+  .footChild span{
+    color: lightslategray;
   }
   }
   /* Desktop menu */
@@ -246,17 +385,28 @@
       color: white;
       height: 20%;
     }
+    /* About section */
+    .containerChild2{
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+     
+    }
     .cards{
       display: flex;
       flex-flow: row wrap;
       justify-content: space-around;
       background-color: gray;
-      width: 70%;
+      width: 90%;
       margin: 0 auto;
       border: solid;
+      border-bottom-left-radius: 5%;
+      border-bottom-right-radius: 5%;
     }
     .card{
-     flex: 0 1 calc(30% - 1em);
+     flex: 0 1 calc(32% - 1em);
      box-sizing: border-box;
      margin: 1rem .25em;
      background-color: white;
@@ -267,16 +417,78 @@
     font-size: 12px;
     content: "\f078";
     }
+    /* Function section */
+    .containerChild3{
+      width: 90%;
+      
+      margin-left: 5%;
+      margin-right: 5%;
+      background-color: white;
+      min-height: 50vh;
+      padding-top: 5px;
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+    }
+    .funcBox{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+    .funcChild{
+      min-height: 15vh;
+    }
+    .funcChild:not(#Art1, #Art2, #Art3){
+      border-bottom: lightgray solid;
+      box-sizing: border-box;
+      padding: 30px;
+      margin: 1rem .25em;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #Art1{
+      flex: 0 0 calc(25% - 1em);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+    #Art2{
+      flex: 0 2 calc(60% - 1em);
+      box-sizing: border-box;
+      margin: 1rem .25em;
+      padding: 30px;
+      border-left:lightgray solid;
+      border-right: lightgrey solid;
+      align-self: center;
+
+    }
+    #Art3{
+      flex: 0 0 calc(100% - 1em);
+      border-top: lightgray solid;
+      padding: 0;
+    }
+    #Art4{
+
+    }
+    #Art5{
+      
+    }
+    #Art6{
+      flex: 0 0 calc(50% - 1em);
+      box-sizing: border-box;
+      margin: 1rem .25em;
+    }
+    
+    /* Sticky nav bar with css and javascript. very frustating. */
     .aboutText{
       padding: 20px;
       margin: 0 auto;
     }
-     /* Sticky nav bar with css and javascript. very frustating. */
   .sticky{
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
+  }
+  .service-sticky-mode{
+    margin-top: 70px;
   }
   .content {
     padding: 60px;
@@ -288,4 +500,29 @@
     padding-top: 60px;
     background-color:grey;
   }
+  .footBox{
+    display: flex;
+    flex-flow: column wrap;
+    height: 50vh;
+    justify-content: space-evenly;
+  
   }
+  .footChild{
+    flex: 1 0 calc(20% - 3em);
+    height: 100%;
+    box-sizing: border-box;
+    background-color: darkslategray;
+    font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    align-items: stretch;
+    
+  }
+  .footChild a{
+    padding-top: 10px;
+    color: darkturquoise;
+    
+  }
+ 
+  }
+  
+  

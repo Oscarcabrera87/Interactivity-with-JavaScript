@@ -48,13 +48,17 @@ window.onscroll = function () {
   myFunction()}
 
 var navbar = document.querySelector('#navbar');
-
+var serviceWrapper = document.getElementById("service-wrapper")
 var sticky = navbar.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
+    serviceWrapper.classList.add("service-sticky-mode");
   } else {
     navbar.classList.remove("sticky");
+    serviceWrapper.classList.remove("service-sticky-mode");
   }
 }
+console.log(offsetTop);
+console.log(pageYOffset);
