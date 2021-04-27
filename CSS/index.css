@@ -24,12 +24,18 @@
     min-height: 50vh;
     background-color: white;
     margin-bottom: 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 10px 5px 5px gray;
   }
   .containerChild3 {
     justify-content: center;
     min-height: 50vh;
     background-color: white;
     margin-bottom: 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 10px 5px 5px gray;
   }
   .containerChild4{
     height: 30vh;
@@ -39,7 +45,6 @@
     text-align: center;
     margin: 0 auto;
     font-size: 15px;
-  
     font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif;
   }
   .funcBox{
@@ -84,6 +89,16 @@
     box-sizing: border-box;
     margin: 1rem .25em;
   }
+  /* Work on headings and font for all displays */
+  h1{
+    background: src="img/we";
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 20px;
+    font-size: 45px;
+
+  }
   h2 {
     font-size: 20px;
     width: 100%;
@@ -99,7 +114,8 @@
     overflow: hidden;
     padding: 0;
     height: auto;
-    border-bottom: double;
+    border-bottom: 1px grey;
+    box-shadow: 5px 5px 5px lightgray;
     
   }
   #imgHeader{
@@ -225,6 +241,9 @@
 ------------------------ */
   /* Tablet menu */
   @media all and (min-width: 700px) {
+    h1{
+      font-size: 90px;
+    }
     .menu {
       align-items: flex-start;
       justify-content: center;
@@ -345,6 +364,9 @@
   }
   /* Desktop menu */
   @media all and (min-width: 960px) {
+    h1{
+      font-size: 120px;
+    }
     .menu {
       align-items: flex-start;
       flex-wrap: nowrap;
