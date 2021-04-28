@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    background-color: lightgray;
+    background-color: white;
 
   }
   .container{
@@ -27,6 +27,7 @@
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     box-shadow: 10px 5px 5px gray;
+    border: 0px 1px;
   }
   .containerChild3 {
     justify-content: center;
@@ -90,15 +91,6 @@
     margin: 1rem .25em;
   }
   /* Work on headings and font for all displays */
-  h1{
-    background: src="img/we";
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-top: 20px;
-    font-size: 45px;
-
-  }
   h2 {
     font-size: 20px;
     width: 100%;
@@ -241,9 +233,6 @@
 ------------------------ */
   /* Tablet menu */
   @media all and (min-width: 700px) {
-    h1{
-      font-size: 90px;
-    }
     .menu {
       align-items: flex-start;
       justify-content: center;
@@ -364,9 +353,7 @@
   }
   /* Desktop menu */
   @media all and (min-width: 960px) {
-    h1{
-      font-size: 120px;
-    }
+  
     .menu {
       align-items: flex-start;
       flex-wrap: nowrap;
