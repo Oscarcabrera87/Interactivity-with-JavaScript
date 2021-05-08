@@ -62,3 +62,13 @@ function myFunction() {
 }
 console.log(offsetTop);
 console.log(pageYOffset);
+
+// Animations - balloons
+
+const balloons = [document.querySelector("#purpleBalloon"), 
+document.querySelector("#blueBalloon"), 
+document.querySelector("#yellowBalloon")];
+
+balloons.forEach((balloon) => {
+  balloon.animate([{ top: "100vh" }, {top: "5vh"}], {duration: duration, fill: "forwards" });
+});
