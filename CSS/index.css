@@ -100,6 +100,11 @@
     text-decoration: underline;
   
   }
+  h3 {
+    text-align: center;
+    padding: 5px;
+    
+  }
   nav {
     display: flex;
     flex-flow: column nowrap;
