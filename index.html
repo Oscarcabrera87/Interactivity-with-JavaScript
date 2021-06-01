@@ -14,7 +14,7 @@
 
 </head>
 <!-- Beginning of first large flexbox -->
-
+<body onload="document.getElementById('defaultOpen').click();"></body>
 <body class="container">
 	<header>
 		<div>
@@ -151,20 +151,20 @@
 				</article>
 				<article class="funcChild" id="Art2">
 					<h3>The Nav Bar</h3>
-					<p>This was challenging because of three reasons:
+					<p class="text">This was challenging because of three reasons:
 					<ul>
-						<li>Sticky was not behaving with the multiple media
+						<li class="text">Sticky was not behaving with the multiple media
 							queries.</li>
-						<li>I was having trouble pinpointing through the console
+						<li class="text">I was having trouble pinpointing through the console
 							log where my padding for the above "About" content
 							container was through my manipulation of the
 							pageYOffset and the offsetTop Elements.</li>
-						<li>My Nav Menu bottom border was causing spasms with
+						<li class="text">My Nav Menu bottom border was causing spasms with
 							every adjustment.</li>
 					</ul>
 					</p>
 				</article>
-				<div class="funcChild" id="Art3"></div>
+				<div class="funcChild" id="Art3">
 				<article class="funcChild" id="Art4">
 					<h3>What did I do?</h3>
 					<p>I had to look up because I had built it using just how I
@@ -202,6 +202,7 @@
 						satisfied and good to move on to more Back End Coding.
 					</p>
 				</article>
+				</div>
 			</section>
 		</div>
 	</div>
@@ -226,7 +227,7 @@
 				</div>
 			</article>
 			<article class="tranChild">
-				<h4>Understanding Keyframes</h4>
+				<h3>Understanding Keyframes</h3>
 				<p>CSS animations provide a bit more control. They allow for the
 					creation of multiple keyframes over which the animation
 					occurs. While they can start in reaction to a change in CSS
@@ -243,7 +244,7 @@
 	</div>
 	<div class="containerChild2">
 		<div class="tab" id="certificates">
-			<button class="tablinks" onclick="openCert(event, 'UMich')">U. Of
+			<button class="tablinks" onclick="openCert(event, 'UMich')" id="defaultOpen">U. Of
 				Michigan</button>
 			<button class="tablinks" onclick="openCert(event, 'Google')">Google
 				Cert</button>

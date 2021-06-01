@@ -162,18 +162,13 @@
   h2 {
     font-size: 50px;
     width: 100%;
-    height: 5vh;
     padding: 2em;
     color: teal;
     text-align: center;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-
-  #certificates h2{
-    color: white;
-    background-color: darkslategrey;
-  }
   h3 {
+    font-size:x-large;
     text-align: center;
     padding: 5px;
     color: darkturquoise;
@@ -189,13 +184,11 @@
     box-shadow: 5px 5px 5px lightgray;
     
   }
-  #imgHeader{
-    width: 100%;
-    margin: 0 auto;
-  }
   a {
     color: black;
     text-decoration: none;
+    font-size: medium;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   .menu,
   .submenu {
@@ -392,11 +385,6 @@
      padding: 2% 1% 4% 1%;
      background-color: white;
     }
-    .card p{
-      font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif;
-      font-size: 12px;
-      content: "\f078";
-    }
     .funcBox{
       display: flex;
       flex-flow: row wrap;
@@ -554,10 +542,13 @@
      background-color: white;
      padding: 2% 1% 4% 1%;
     }
-    .card p{
-    font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    content: "\f078";
+    .text{
+      font-size: medium;
+      font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif;
+    }
+    p{
+      font-size: medium;
+      font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif;
     }
     /* Function section */
     .containerChild3{
@@ -593,16 +584,18 @@
     }
     #Art2{
       flex: 0 2 calc(60% - 1em);
-      box-sizing: border-box;
+      /* box-sizing: border-box; */
       margin: 1rem .25em;
       padding: 30px;
-      border-left:lightgray solid;
-      border-right: lightgrey solid;
+      /* border-left:lightgray solid;
+      border-right: lightgrey solid; */
       align-self: center;
 
     }
     #Art3{
-      flex: 0 0 calc(100% - 1em);
+      display: flex;
+      flex-direction: column;
+      /* flex: 0 0 calc(100% - 1em); */
       border-top: lightgray solid;
       padding: 0;
     }
