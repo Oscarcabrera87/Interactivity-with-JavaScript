@@ -15,7 +15,7 @@
 </head>
 <!-- Beginning of first large flexbox -->
 
-<body class="container"> 
+<body class="container">
 	<header>
 		<div>
 			<img id="imgHeader" src="img/Website_cover.jpg"
@@ -214,10 +214,11 @@
 				</div>
 			</article>
 			<article class="tranChild">
-					<div class="imgChange">
-					<img src="img/Purple_Balloon.png" width="50px" height="100px">
-				<p>Image Animation</p>
-			</div>
+				<div class="imgChange">
+					<img src="img/Purple_Balloon.png" width="50px"
+						height="100px">
+					<p>Image Animation</p>
+				</div>
 			</article>
 			<article class="tranChild">
 				<div class="colorChange">
@@ -226,89 +227,264 @@
 			</article>
 			<article class="tranChild">
 				<h4>Understanding Keyframes</h4>
-				<p>CSS animations provide a bit more control. They allow for the creation of multiple keyframes over which the animation occurs. While they can start in reaction to a change in CSS property value, they can also run on their own. An animation executes as soon as the animation property is applied. Its an exeptional challenge while keeping with a FlexBox template but the uses of visualiztion for data, whether using CSS or JavaScript or a mix of the two, is Key to creating simplified visuals to understand complex figures. Basic knowlege allows me to have a strong foundation as I tailor data to a client's specific needs.</p>
+				<p>CSS animations provide a bit more control. They allow for the
+					creation of multiple keyframes over which the animation
+					occurs. While they can start in reaction to a change in CSS
+					property value, they can also run on their own. An animation
+					executes as soon as the animation property is applied. Its
+					an exeptional challenge while keeping with a FlexBox
+					template but the uses of visualiztion for data, whether
+					using CSS or JavaScript or a mix of the two, is Key to
+					creating simplified visuals to understand complex figures.
+					Basic knowlege allows me to have a strong foundation as I
+					tailor data to a client's specific needs.</p>
 			</article>
 		</section>
 	</div>
-	<div class="containerChild2" id="certificates">
-		<section class="cards">
+	<div class="containerChild2">
+		<div class="tab" id="certificates">
+			<button class="tablinks" onclick="openCert(event, 'UMich')">U. Of
+				Michigan</button>
+			<button class="tablinks" onclick="openCert(event, 'Google')">Google
+				Cert</button>
+			<button class="tablinks"
+				onclick="openCert(event, 'Sales')">Salesforce</button>
+			<button class="tablinks"
+				onclick="openCert(event, 'CalArts')">CalArts</button>
+			<button class="tablinks"
+				onclick="openCert(event, 'Coursera')">Coursera</button>
+		</div>
+	
+		<section id="UMich" class="tabcontent">
 			<h2>University of Michigan</h2>
-			<article class="card">
-				<h3>Interactivity with JavaScript</h3>
-				<img src="img/Interactivity_with_JavaScript.jpg" width="100%">
-				<p>Crafted to cover concepts such as variables, looping, functions, and even a little bit about debugging tools. Targeting DOM manipulation with JavaScript to identify and modify specific parts of a page.</p>
-			</article>
-			<article class="card">
-				<h3>Introduction to CSS3</h3>
-				<img src="img/Introduction_to_CSS3.jpg" width="100%">
-				<p>Created to enforce an eye for accessibility using the standardized POUR guidelinesand the importance of learning how to write CSS rules, how to test code, and how to establish good programming habits.</p>
-			</article>
-			<article class="card">
-				<h3>Introduction to HTML5</h3>
-				<img src="img/Introduction_to_HTML5.jpg" width="100%">
-				<p>Understanding the basics for adhering to syntactic standards for validation and semantic standards to promote wide accesibility for users with disability.</p>
-			</article>
-			<br>
-			<h2>Coursera Project Network</h2>
-			<article class="card">
-				<h3>CSS3 Flexbox- Mastering the Basics</h3>
-				<img src="img/CSS3_Flexbox.jpg" width="100%">
-				<p>Understanding Flexbox properties so that one can apply these techniques into building modern web layouts in Front End part of the Web application process.</p>
-			</article>
-			<article class="card">
-				<h3>JavaScript Variables and Assignment Operators</h3>
-				<img src="img/JavaScript_Variables_and_Assignment_Operators.jpg" width="100%">
-				<p>Working with JavaScript variables and assignment operators by writing and testing using a text editor and the Chrome browser. </p>
+			<div class="cards">
+				<article class="card">
+					<h3>Building Web Applications</h3>
+					<img src="img/Building Web Applications in PHP.jpg"
+						width="100%">
+					<p></p>
 				</article>
-			<article class="card">
-					<h3>JavaScript Nested If Statements</h3>
-					<img src="img/JavaScript_Nested_If.jpg" width="100%">
-					<p>Examined the need to make complex decisions in programming that require Nested If statements. Practiced on creating Work Flows for Logical JavaScript Statements.</p>
-					</article>
-			<article class="card">
-				<h3>Practicle Introduction to the Command Line</h3>
-				<img src="img/Practical_Introduction_to_the_Command_Line.jpg" width="100%">
-				<p>Interacting with a computer through a command line interface. Learning and practicing with terminal, bash (ohmyzsh) and prompt.</p>
-			</article>
-			<article class="card">
-				<h3>JavaScript Animations</h3>
-				<img src="img/JavaScript_Animations.jpg" width="100%">
-				<p>Understanding the flow method of collecting storytelling and data visualization and crafting elements to use on your page with JavaScript. Using If Statemtents and Loops to assign interactivity with the animations.</p>
-			</article>
-			<br>
+				<article class="card">
+					<h3>Intro into Structured SQL</h3>
+					<img src="img/Intro into Structured SQL.jpg" width="100%">
+					<p></p>
+				</article>
+				<article class="card">
+					<h3>Interactivity with JavaScript</h3>
+					<img src="img/Interactivity_with_JavaScript.jpg"
+						width="100%">
+					<p>Crafted to cover concepts such as variables, looping,
+						functions, and even a little bit about debugging tools.
+						Targeting DOM manipulation with JavaScript to identify
+						and modify specific parts of a page.</p>
+				</article>
+				<article class="card">
+					<h3>Introduction to CSS3</h3>
+					<img src="img/Introduction_to_CSS3.jpg" width="100%">
+					<p>Created to enforce an eye for accessibility using the
+						standardized POUR guidelinesand the importance of
+						learning how to write CSS rules, how to test code, and
+						how to establish good programming habits.</p>
+				</article>
+				<article class="card">
+					<h3>Introduction to HTML5</h3>
+					<img src="img/Introduction_to_HTML5.jpg" width="100%">
+					<p>Understanding the basics for adhering to syntactic
+						standards for validation and semantic standards to
+						promote wide accesibility for users with disability.</p>
+				</article>
+			</div>
+		</section>
+		<br>
+		<section id="Coursera" class="tabcontent">
+		<h2>Coursera Project Network</h2>
+		<div class="cards">
+		<article class="card">
+			<h3>CSS3 Flexbox- Mastering the Basics</h3>
+			<img src="img/CSS3_Flexbox.jpg" width="100%">
+			<p>Understanding Flexbox properties so that one can apply these
+				techniques into building modern web layouts in Front End
+				part of the Web application process.</p>
+		</article>
+		<article class="card">
+			<h3>JavaScript Variables and Assignment Operators</h3>
+			<img src="img/JavaScript_Variables_and_Assignment_Operators.jpg"
+				width="100%">
+			<p>Working with JavaScript variables and assignment operators by
+				writing and testing using a text editor and the Chrome
+				browser. </p>
+		</article>
+		<article class="card">
+			<h3>JavaScript Nested If Statements</h3>
+			<img src="img/JavaScript_Nested_If.jpg" width="100%">
+			<p>Examined the need to make complex decisions in programming
+				that require Nested If statements. Practiced on creating
+				Work Flows for Logical JavaScript Statements.</p>
+		</article>
+		<article class="card">
+			<h3>Practicle Introduction to the Command Line</h3>
+			<img src="img/Practical_Introduction_to_the_Command_Line.jpg"
+				width="100%">
+			<p>Interacting with a computer through a command line interface.
+				Learning and practicing with terminal, bash (ohmyzsh) and
+				prompt.</p>
+		</article>
+		<article class="card">
+			<h3>JavaScript Animations</h3>
+			<img src="img/JavaScript_Animations.jpg" width="100%">
+			<p>Understanding the flow method of collecting storytelling and
+				data visualization and crafting elements to use on your page
+				with JavaScript. Using If Statemtents and Loops to assign
+				interactivity with the animations.</p>
+		</article>
+		</div>
+		</section>
+		<br>
+		<section id="Google" class="tabcontent">
 			<h2>Google Certificates</h2>
-			<article class="card">
-				<h3>Technical Support Fundamentals</h3>
-				<img src="img/Technical_Support_Fundamentals.jpg" width="100%">
-				<p>Learned about the different facets of Information Technology, like computer hardware, the Internet, computer software, troubleshooting, and customer service. understand how the binary system works. Practiced assembling a computer from scratch, chose and install an operating system on a computer, broke down what the Internet is, how it works, and the impact it has in the modern world, learned how applications are created and how they work under the hood of a computer, and utilized common problem-solving methodologies and soft skills in an Information Technology setting.</p>
-			</article>
-			<article class="card">
-				<h3>Bits And Bytes Of Computer Networking</h3>
-				<img src="img/ The_Bits_and_Bytes_of_Computer_Networking.jpg" width="100%">
-				<p>Learned about the fundamentals of modern networking technologies and protocols to an overview of the cloud to practical applications and network troubleshooting. As well as being able to describe computer networks in terms of a five-layer model, understand all of the standard protocols involved with TCP/IP communications, grasp powerful network troubleshooting tools and techniques, learn network services like DNS and DHCP that help make computer networks run, understand cloud computing, everything as a service, and cloud storage.</p>
-			</article>
-			<br>
+			<div class="cards">
+				<article class="card">
+					<h3>Technical Support Fundamentals</h3>
+					<img src="img/Technical_Support_Fundamentals.jpg"
+						width="100%">
+					<p>Learned about the different facets of Information
+						Technology, like computer hardware, the Internet,
+						computer software, troubleshooting, and customer
+						service. understand how the binary system works.
+						Practiced assembling a computer from scratch, chose
+						and install an operating system on a computer, broke
+						down what the Internet is, how it works, and the
+						impact it has in the modern world, learned how
+						applications are created and how they work under the
+						hood of a computer, and utilized common
+						problem-solving methodologies and soft skills in an
+						Information Technology setting.</p>
+				</article>
+				<article class="card">
+					<h3>Bits And Bytes Of Computer Networking</h3>
+					<img src="img/ The_Bits_and_Bytes_of_Computer_Networking.jpg"
+						width="100%">
+					<p>Learned about the fundamentals of modern networking
+						technologies and protocols to an overview of the
+						cloud to practical applications and network
+						troubleshooting. As well as being able to describe
+						computer networks in terms of a five-layer model,
+						understand all of the standard protocols involved
+						with TCP/IP communications, grasp powerful network
+						troubleshooting tools and techniques, learn network
+						services like DNS and DHCP that help make computer
+						networks run, understand cloud computing, everything
+						as a service, and cloud storage.</p>
+				</article>
+			</div>
+		</section>
+		<br>
+		<section id="CalArts" class="tabcontent">
+			<h2>CalArts Certificates</h2>
+			<div class="cards">
+				<article class="card">
+					<h3>Web Design Strategy</h3>
+					<img src="img/Web Design Strategy.jpg" width="100%">
+					<p></p>
+				</article>
+				<article class="card">
+					<h3>Web Design- Wireframes to Prototypes</h3>
+					<img src="img/Web Design- Wireframes to Prototypes.jpg"
+						width="100%">
+					<p></p>
+				</article>
+			</div>
+		</section>
+		<br>
+		<section id="Sales" class="tabcontent">
 			<h2>Salesforce Certificates</h2>
-			<article class="card">
-				<h3>Salesforce Basics</h3>
-				<img src="img/Salesforce Basics.jpg" width="100%">
-				<p>In this course, you will learn about what the world’s number one Customer Relationship Manager (CRM) system has to offer. You will begin this course by understanding the components that Salesforce leverages to make it an optimal system. You will learn about the basics in Lightning for Sales, Community Cloud and Marketing, and understanding how to secure your Salesforce Organization and Manage Permissions. These tools will serve as building blocks to implementing Salesforce into any organization. The course includes in-depth readings and practical application activities within Salesforce's Trailhead education platform, peer discussion opportunities, demonstration videos, and peer review assignments.</p>
-			</article>
-			<article class="card">
-				<h3>Salesforce Reporting</h3>
-				<img src="img/Salesforce_Reporting_Cert.jpg" width="100%">
-				<p>Salesforce Reporting focuses on how the micro-level changes in Salesforce affect the macro level of the user experience. In this course, you will focus on creating custom objects, field dependencies, and work flows to track accounts or services. It is also important that you maintain data clean for your organization and you will work with creating reports, managing data, and creating full reports and dashboards. Lastly, you will focus on your customer base with Salesforce Service Cloud to maintain engagement through your services. The course includes in-depth readings and practical application activities within Salesforce's Trailhead education platform, peer discussion opportunities, demonstration videos, and peer review assignments.</p>
-			</article>
-			<article class="card">
-				<h3>SalesforceIntergration</h3>
-				<img src="img/Salesforce_Intergration.jpg" width="100%">
-				<p>Salesforce Integration explores why data management is so important, how Salesforce can help organize and display reported data to gain insight into trends and patterns, and how to automate manual business procedures. Learners will specifically practice creating custom automation process, building work flows, and performing data modeling. The course includes in-depth readings and practical application activities within Salesforce's Trailhead education platform, peer discussion opportunities, demonstration videos, and peer review assignments.</p>
-			</article>
-			<article class="card">
-				<h3>Salesforce Capstone: Organization Intergration</h3>
-				<img src="img/" width="100%">
-				<p>In Salesforce Capstone: Organization Integration, the final course of the Salesforce Fundamentals Specialization, learners will complete the Business Administration Specialist Superbadge as their main project. This project asks learners to combine all the skills and knowledge areas that they have collected from the previous three courses. Skill areas to be demonstrated include cleaning and importing account data, adding users and managing access, building email templates for new marketing needs, configuring UI tools for a new product type, generating reports and dashboards, managing and applying Chatter tools, and participating in the deployment of Salesforce within an organization. In addition to the project, the course includes a peer discussion opportunity, a demonstration video, and a peer review assignment. Completion of the Salesforce Fundamentals specialization and the Business Administration Specialist Superbadge prepares learners to take the Salesforce Administrator exam.</p>
-			</article>
+			<div class="cards">
+				<article class="card">
+					<h3>Salesforce Basics</h3>
+					<img src="img/Salesforce Basics.jpg" width="100%">
+					<p>In this course, you will learn about what the
+						world’s number one Customer Relationship Manager
+						(CRM) system has to offer. You will begin this
+						course by understanding the components that
+						Salesforce leverages to make it an optimal
+						system. You will learn about the basics in
+						Lightning for Sales, Community Cloud and
+						Marketing, and understanding how to secure your
+						Salesforce Organization and Manage Permissions.
+						These tools will serve as building blocks to
+						implementing Salesforce into any organization.
+						The course includes in-depth readings and
+						practical application activities within
+						Salesforce's Trailhead education platform, peer
+						discussion opportunities, demonstration videos,
+						and peer review assignments.</p>
+				</article>
+				<article class="card">
+					<h3>Salesforce Reporting</h3>
+					<img src="img/Salesforce_Reporting_Cert.jpg" width="100%">
+					<p>Salesforce Reporting focuses on how the
+						micro-level changes in Salesforce affect the
+						macro level of the user experience. In this
+						course, you will focus on creating custom
+						objects, field dependencies, and work flows to
+						track accounts or services. It is also important
+						that you maintain data clean for your
+						organization and you will work with creating
+						reports, managing data, and creating full
+						reports and dashboards. Lastly, you will focus
+						on your customer base with Salesforce Service
+						Cloud to maintain engagement through your
+						services. The course includes in-depth readings
+						and practical application activities within
+						Salesforce's Trailhead education platform, peer
+						discussion opportunities, demonstration videos,
+						and peer review assignments.</p>
+				</article>
+				<article class="card">
+					<h3>SalesforceIntergration</h3>
+					<img src="img/Salesforce_Intergration.jpg" width="100%">
+					<p>Salesforce Integration explores why data
+						management is so important, how Salesforce can
+						help organize and display reported data to gain
+						insight into trends and patterns, and how to
+						automate manual business procedures. Learners
+						will specifically practice creating custom
+						automation process, building work flows, and
+						performing data modeling. The course includes
+						in-depth readings and practical application
+						activities within Salesforce's Trailhead
+						education platform, peer discussion
+						opportunities, demonstration videos, and peer
+						review assignments.</p>
+				</article>
+				<article class="card">
+					<h3>Salesforce Capstone: Organization Intergration
+					</h3>
+					<img src="img/Salesforce Fund.jpg" width="100%">
+					<p>In Salesforce Capstone: Organization Integration,
+						the final course of the Salesforce Fundamentals
+						Specialization, learners will complete the
+						Business Administration Specialist Superbadge as
+						their main project. This project asks learners
+						to combine all the skills and knowledge areas
+						that they have collected from the previous three
+						courses. Skill areas to be demonstrated include
+						cleaning and importing account data, adding
+						users and managing access, building email
+						templates for new marketing needs, configuring
+						UI tools for a new product type, generating
+						reports and dashboards, managing and applying
+						Chatter tools, and participating in the
+						deployment of Salesforce within an organization.
+						In addition to the project, the course includes
+						a peer discussion opportunity, a demonstration
+						video, and a peer review assignment. Completion
+						of the Salesforce Fundamentals specialization
+						and the Business Administration Specialist
+						Superbadge prepares learners to take the
+						Salesforce Administrator exam.</p>
+				</article>
+			</div>
 		</section>
 	</div>
 	<div class="containerChild4" id="contact">
